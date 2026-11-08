@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudQA Mutation Test</title>
+</head>
+<body>
+    <h2>Modified CloudQA Form</h2>
+
+    <!-- Decoy with a similar input -->
+    <div>
+        <label>Last Name</label>
+        <input type="text" placeholder="Name">
+    </div>
+
+    <!-- State moved to first position -->
+    <section>
+        <label>State</label>
+        <div>
+            <select id="location_928"
+                    name="country_new"
+                    class="updated-select">
+                <option>-- Select Country --</option>
+                <option>India</option>
+                <option>Canada</option>
+                <option>Japan</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Gender identifiers changed -->
+    <section>
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="person_type"
+                   id="r_101" value="Female">
+            <span>Female</span>
+
+            <input type="radio" name="person_type"
+                   id="r_102" value="Male">
+            <span>Male</span>
+        </div>
+    </section>
+
+    <!-- First Name moved to bottom -->
+    <section>
+        <label for="new_883">First Name</label>
+        
+        <div>
+            <input type="text"
+                   id="new_883"
+                   name="random_input"
+                   class="different-class">
+        </div>
+    </section>
+</body>
+</html>
